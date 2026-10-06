@@ -147,7 +147,23 @@ export function createApp(db, persist = () => writeDb(db)) {
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const db = loadDb(DB_FILE, { reset: process.argv.includes('--reset') });
-  http.createServer(createApp(db)).listen(PORT, () => {
-    console.log(`mAIn Council Hub running at http://localhost:${PORT}`);
+  const server = http.createServer(createApp(db));
+  const portFixed = !!process.env.PORT;
+  let port = PORT;
+  server.on('error', (err) => {
+    // Port taken (often another copy of the hub still running): try the next
+    // one, unless PORT was set explicitly.
+    if (err.code === 'EADDRINUSE' && !portFixed && port < PORT + 10) {
+      console.log(`Port ${port} is in use, trying ${port + 1}…`);
+      server.listen(++port);
+      return;
+    }
+    if (err.code === 'EADDRINUSE') {
+      console.error(`Port ${port} is already in use. Close the other program using it, or pick another port, e.g.\n  PowerShell:  $env:PORT=3100; npm start\n  cmd:         set PORT=3100 && npm start\n  macOS/Linux: PORT=3100 npm start`);
+      process.exit(1);
+    }
+    throw err;
   });
+  server.on('listening', () => console.log(`mAIn Council Hub running at http://localhost:${port}`));
+  server.listen(port);
 }
