@@ -1,0 +1,17 @@
+{
+  "name": "main-council-hub",
+  "version": "0.1.0",
+  "description": "Collaboration hub for the Global mAIn Council: workstream updates, two-week council snapshots, action items, meeting notes, wins, and Comms email drafts.",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset-data": "node server.js --reset",
+    "test": "node --test test/*.test.js"
+  }
+}

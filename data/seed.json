@@ -1,0 +1,1259 @@
+{
+  "meta": {
+    "name": "Global mAIn Council",
+    "seededAt": "2026-09-24T17:00:00.000Z",
+    "version": 1
+  },
+  "workstreams": [
+    {
+      "id": "ws_comms",
+      "name": "Comms & Community",
+      "short": "Drive AI adoption team by team; build momentum and visibility",
+      "mission": "Drive AI adoption team by team, sustain visibility, recognition, and community energy.",
+      "scope": "Creates awareness, shares success stories, and builds ongoing engagement around AI across the organization — newsletter, success stories, demos, and engagement.",
+      "bestFit": "People leaders, influencers, change champions, communicators, community builders, sponsors",
+      "order": 1,
+      "leadIds": [
+        "m_rakesh_bittikudige_narasappayya",
+        "m_samantha_owen"
+      ],
+      "memberIds": [
+        "m_shagun_manchanda",
+        "m_samantha_owen",
+        "m_trevor_rizzo",
+        "m_deexitha_shetty",
+        "m_cameron_caillouet",
+        "m_rakesh_bittikudige_narasappayya",
+        "m_aravind_sridhar",
+        "m_chris_van_grondelle"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "ws_literacy",
+      "name": "AI Literacy",
+      "short": "Build fluency that scales",
+      "mission": "Build baseline fluency for scale.",
+      "scope": "Training, onboarding, practical guidance, and office hours to help teams use AI with more confidence and consistency.",
+      "bestFit": "Enablement leads, coaches, facilitators",
+      "order": 2,
+      "leadIds": [
+        "m_brijesh_patel",
+        "m_murthy_abhinapu"
+      ],
+      "memberIds": [
+        "m_shivansh_mishra",
+        "m_yutian_zhao",
+        "m_ricardo_rivera",
+        "m_carinne_tzurdecker",
+        "m_brijesh_patel",
+        "m_elizabeth_hiser",
+        "m_arul_selvan_odathurai_murugan",
+        "m_hunter_governale",
+        "m_murthy_abhinapu"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "ws_usecases",
+      "name": "Use Cases & Prompts",
+      "short": "Reuse what works",
+      "mission": "Identify and standardize reusable AI know-how.",
+      "scope": "Turns strong individual usage into practical guidance by documenting what works and making it easier for teams to reuse proven prompts, skills, and playbooks.",
+      "bestFit": "Functional experts, AI practitioners, documenters",
+      "order": 3,
+      "leadIds": [
+        "m_shravan_raj",
+        "m_vraj_patel"
+      ],
+      "memberIds": [
+        "m_vraj_patel",
+        "m_bradley_mcalpine",
+        "m_vigneswaran_sekar",
+        "m_faith_hefner",
+        "m_jarred_nix",
+        "m_kenny_oen",
+        "m_harish_eshwarappa",
+        "m_nirosh_kumari",
+        "m_charanya_badarinarayanan",
+        "m_shravan_raj",
+        "m_tanzil_shaikh",
+        "m_rixt_de_boer",
+        "m_samuel_bitoun"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "ws_agents",
+      "name": "Agent Pipeline",
+      "short": "Convert ideas into usable solutions",
+      "mission": "Incubate high-value internal AI solutions.",
+      "scope": "Turns promising ideas into usable internal solutions by shaping, prioritizing, testing, and advancing high-value opportunities.",
+      "bestFit": "Builders, innovators, product-minded operators",
+      "order": 4,
+      "leadIds": [
+        "m_hari_hara_prasad",
+        "m_chris_messer"
+      ],
+      "memberIds": [
+        "m_will_caffrey",
+        "m_amit_deshpande",
+        "m_jitendra_palai",
+        "m_john_zhang",
+        "m_tripp_griffith",
+        "m_chris_messer",
+        "m_cole_smith",
+        "m_eric_palacio",
+        "m_marshall_pinto",
+        "m_krishna_sah",
+        "m_maruti_karuturi",
+        "m_ayush_gupta",
+        "m_praveen_pukayilenta_parambath",
+        "m_dileep_hari",
+        "m_michael_mcbratney",
+        "m_hari_hara_prasad"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "ws_measure",
+      "name": "Measurement & Governance",
+      "short": "Prove value and guide scale",
+      "mission": "Prove value and guide what should scale.",
+      "scope": "Helps the council define guardrails, reduce duplication, and create the dashboards, scorecards, and methods needed to scale AI responsibly and effectively.",
+      "bestFit": "Analytics, PMO, operations, governance contributors",
+      "order": 5,
+      "leadIds": [
+        "m_prahlad_srinivasan",
+        "m_zack_owen",
+        "m_kyras_sunghuttee"
+      ],
+      "memberIds": [
+        "m_christian_rivera",
+        "m_bharath_lalitha",
+        "m_prahlad_srinivasan",
+        "m_sanjeet_shrivastava",
+        "m_zack_owen",
+        "m_arun_rachanaika",
+        "m_jason_schildroth",
+        "m_anshuman_dutta",
+        "m_james_dale",
+        "m_kyras_sunghuttee"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    }
+  ],
+  "members": [
+    {
+      "id": "m_shagun_manchanda",
+      "name": "Shagun Manchanda",
+      "region": "ANZ",
+      "primaryWorkstreamId": "ws_comms",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_samantha_owen",
+      "name": "Samantha Owen",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_comms",
+      "roles": [
+        "comms"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_trevor_rizzo",
+      "name": "Trevor Rizzo",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_comms",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_deexitha_shetty",
+      "name": "Deexitha Shetty",
+      "region": "India",
+      "primaryWorkstreamId": "ws_comms",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_cameron_caillouet",
+      "name": "Cameron Caillouet",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_comms",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_rakesh_bittikudige_narasappayya",
+      "name": "Rakesh Bittikudige Narasappayya",
+      "region": "India",
+      "primaryWorkstreamId": "ws_comms",
+      "roles": [
+        "comms"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_aravind_sridhar",
+      "name": "Aravind Sridhar",
+      "region": "India",
+      "primaryWorkstreamId": "ws_comms",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_chris_van_grondelle",
+      "name": "Chris van Grondelle",
+      "region": "EMEA",
+      "primaryWorkstreamId": "ws_comms",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_shivansh_mishra",
+      "name": "Shivansh Mishra",
+      "region": "ANZ",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_yutian_zhao",
+      "name": "Yutian Zhao",
+      "region": "China",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_ricardo_rivera",
+      "name": "Ricardo Rivera",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_carinne_tzurdecker",
+      "name": "Carinne Tzurdecker",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_brijesh_patel",
+      "name": "Brijesh Patel",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_elizabeth_hiser",
+      "name": "Elizabeth Hiser",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_arul_selvan_odathurai_murugan",
+      "name": "Arul Selvan Odathurai Murugan",
+      "region": "India",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_hunter_governale",
+      "name": "Hunter Governale",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_murthy_abhinapu",
+      "name": "Murthy Abhinapu",
+      "region": "EMEA",
+      "primaryWorkstreamId": "ws_literacy",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_vraj_patel",
+      "name": "Vraj Patel",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_bradley_mcalpine",
+      "name": "Bradley McAlpine",
+      "region": "ANZ",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_vigneswaran_sekar",
+      "name": "Vigneswaran Sekar",
+      "region": "Singapore",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_faith_hefner",
+      "name": "Faith Hefner",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_jarred_nix",
+      "name": "Jarred Nix",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_kenny_oen",
+      "name": "Kenny Oen",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_harish_eshwarappa",
+      "name": "Harish Eshwarappa",
+      "region": "India",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_nirosh_kumari",
+      "name": "Nirosh Kumari",
+      "region": "India",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_charanya_badarinarayanan",
+      "name": "Charanya Badarinarayanan",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_shravan_raj",
+      "name": "Shravan Raj",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_tanzil_shaikh",
+      "name": "Tanzil Shaikh",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_rixt_de_boer",
+      "name": "Rixt de Boer",
+      "region": "EMEA",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_samuel_bitoun",
+      "name": "Samuel Bitoun",
+      "region": "EMEA",
+      "primaryWorkstreamId": "ws_usecases",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_will_caffrey",
+      "name": "Will Caffrey",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_amit_deshpande",
+      "name": "Amit Deshpande",
+      "region": "India",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_jitendra_palai",
+      "name": "Jitendra Palai",
+      "region": "ANZ",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_john_zhang",
+      "name": "John Zhang",
+      "region": "Japan",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_tripp_griffith",
+      "name": "Tripp Griffith",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_chris_messer",
+      "name": "Chris Messer",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_cole_smith",
+      "name": "Cole Smith",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_eric_palacio",
+      "name": "Eric Palacio",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_marshall_pinto",
+      "name": "Marshall Pinto",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_krishna_sah",
+      "name": "Krishna Sah",
+      "region": "India",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_maruti_karuturi",
+      "name": "Maruti Karuturi",
+      "region": "India",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_ayush_gupta",
+      "name": "Ayush Gupta",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_praveen_pukayilenta_parambath",
+      "name": "Praveen Pukayilenta Parambath",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_dileep_hari",
+      "name": "Dileep Hari",
+      "region": "EMEA",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_michael_mcbratney",
+      "name": "Michael McBratney",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_hari_hara_prasad",
+      "name": "Hari Hara Prasad",
+      "region": "EMEA",
+      "primaryWorkstreamId": "ws_agents",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_christian_rivera",
+      "name": "Christian Rivera",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_bharath_lalitha",
+      "name": "Bharath Lalitha",
+      "region": "India",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_prahlad_srinivasan",
+      "name": "Prahlad Srinivasan",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_sanjeet_shrivastava",
+      "name": "Sanjeet Shrivastava",
+      "region": "India",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_zack_owen",
+      "name": "Zack Owen",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_arun_rachanaika",
+      "name": "Arun Rachanaika",
+      "region": "India",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_jason_schildroth",
+      "name": "Jason Schildroth",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_anshuman_dutta",
+      "name": "Anshuman Dutta",
+      "region": "U.S.",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_james_dale",
+      "name": "James Dale",
+      "region": "EMEA",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_kyras_sunghuttee",
+      "name": "Kyras Sunghuttee",
+      "region": "EMEA",
+      "primaryWorkstreamId": "ws_measure",
+      "roles": [],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_denise_wallace",
+      "name": "Denise Wallace",
+      "region": "",
+      "primaryWorkstreamId": null,
+      "roles": [
+        "leadership"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_tim_storc",
+      "name": "Tim Storc",
+      "region": "",
+      "primaryWorkstreamId": null,
+      "roles": [
+        "leadership"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_udai_tennati",
+      "name": "Udai Tennati",
+      "region": "",
+      "primaryWorkstreamId": null,
+      "roles": [
+        "leadership"
+      ],
+      "active": true,
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "m_admin",
+      "name": "Hub Administrator",
+      "region": "",
+      "primaryWorkstreamId": null,
+      "roles": [
+        "admin",
+        "council_lead"
+      ],
+      "active": true,
+      "note": "Setup account — assign real admins/council leads in Admin, then deactivate.",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    }
+  ],
+  "updates": [
+    {
+      "id": "upd_mg_20260924",
+      "workstreamId": "ws_measure",
+      "periodStart": "2026-09-11",
+      "periodEnd": "2026-09-24",
+      "status": "Approved",
+      "health": "On Track",
+      "takeaway": "Glean impact analysis justifies ~$4M in annualized savings; next step is presenting it to the Executive Sponsors.",
+      "mission": [
+        "Quantify impact of Glean Enterprise AI to the business",
+        "Prove value and support governance decisions with quantifiable metrics",
+        "Strategic governance forum that provides direction across the AI tooling portfolio"
+      ],
+      "progress": [
+        "Built impact analysis of Glean across three areas: New Hire Billability, Issue Resolution Impact, and Support Ticket Replacement",
+        "Able to justify $4M annualized savings across those three workstreams",
+        "Investigating Flex Credit burn, usage, and management strategy"
+      ],
+      "nextSteps": [
+        "Present impact analysis to Executive Sponsors",
+        "Support follow-ups to finalize Glean renewal",
+        "Analyze EOM trends for Glean Flex Credit usage",
+        "Finalize Flex Credit increase approval process"
+      ],
+      "decisions": [],
+      "risks": [],
+      "help": [
+        "Strategic direction on where to focus"
+      ],
+      "links": [],
+      "importedFrom": "Imported from Measurement & Governance Executive Sponsor Update (24 Sep 2026)",
+      "submittedAt": "2026-09-24T17:00:00.000Z",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "snap_20260924",
+      "title": "Council update — 24 Sep 2026",
+      "periodStart": "2026-09-11",
+      "periodEnd": "2026-09-24",
+      "overallStatus": "On Track",
+      "takeaway": "The council is organized and moving from setup to measurable value: five workstreams are staffed across regions, and Measurement & Governance has quantified roughly $4M in annualized savings from Glean ahead of the renewal decision.",
+      "accomplishments": [
+        "Measurement & Governance completed a Glean impact analysis across New Hire Billability, Issue Resolution Impact, and Support Ticket Replacement — justifying ~$4M in annualized savings",
+        "Flex Credit burn, usage, and management strategy under investigation to inform governance"
+      ],
+      "highlights": [
+        {
+          "workstreamId": "ws_comms",
+          "status": "No update",
+          "summary": "No structured update captured for this period — first hub update due for the 8 Oct council snapshot."
+        },
+        {
+          "workstreamId": "ws_literacy",
+          "status": "No update",
+          "summary": "No structured update captured for this period — first hub update due for the 8 Oct council snapshot."
+        },
+        {
+          "workstreamId": "ws_usecases",
+          "status": "No update",
+          "summary": "No structured update captured for this period — first hub update due for the 8 Oct council snapshot."
+        },
+        {
+          "workstreamId": "ws_agents",
+          "status": "No update",
+          "summary": "No structured update captured for this period — first hub update due for the 8 Oct council snapshot."
+        },
+        {
+          "workstreamId": "ws_measure",
+          "status": "On Track",
+          "summary": "Glean impact analysis justifies ~$4M annualized savings; presenting to Executive Sponsors next and supporting the Glean renewal."
+        }
+      ],
+      "decisions": [],
+      "risks": [],
+      "help": [
+        "Measurement & Governance: strategic direction on where to focus"
+      ],
+      "nextActivities": [
+        "Present Glean impact analysis to Executive Sponsors",
+        "Support follow-ups to finalize Glean renewal",
+        "Analyze EOM trends for Glean Flex Credit usage",
+        "Finalize Flex Credit increase approval process",
+        "All workstreams submit structured updates in the hub before the 8 Oct snapshot"
+      ],
+      "sourceUpdateIds": [
+        "upd_mg_20260924"
+      ],
+      "status": "Approved",
+      "approvedBy": null,
+      "approvedByName": "Imported seed (24 Sep executive deck)",
+      "approvedAt": "2026-09-24T17:00:00.000Z",
+      "importedFrom": "Imported from Measurement & Governance Executive Sponsor Update (24 Sep 2026)",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    }
+  ],
+  "actions": [
+    {
+      "id": "act_01",
+      "action": "Submit first structured workstream updates in the hub",
+      "owner": "All workstream leads",
+      "workstreamId": null,
+      "source": "Council update — 24 Sep 2026",
+      "priority": "High",
+      "status": "Not Started",
+      "dueDate": "2026-10-07",
+      "notes": "Needed for the 8 Oct two-week council snapshot.",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "act_02",
+      "action": "Present Glean impact analysis to Executive Sponsors",
+      "owner": "Measurement & Governance",
+      "workstreamId": "ws_measure",
+      "source": "24 Sep M&G Executive Sponsor Update",
+      "priority": "High",
+      "status": "In Progress",
+      "dueDate": "",
+      "notes": "$4M annualized savings across New Hire Billability, Issue Resolution, and Support Ticket Replacement.",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "act_03",
+      "action": "Support follow-ups to finalize Glean renewal",
+      "owner": "Measurement & Governance",
+      "workstreamId": "ws_measure",
+      "source": "24 Sep M&G Executive Sponsor Update",
+      "priority": "High",
+      "status": "In Progress",
+      "dueDate": "",
+      "notes": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "act_04",
+      "action": "Analyze end-of-month trends for Glean Flex Credit usage",
+      "owner": "Measurement & Governance",
+      "workstreamId": "ws_measure",
+      "source": "24 Sep M&G Executive Sponsor Update",
+      "priority": "Medium",
+      "status": "Not Started",
+      "dueDate": "2026-10-31",
+      "notes": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "act_05",
+      "action": "Finalize Flex Credit increase approval process",
+      "owner": "Measurement & Governance",
+      "workstreamId": "ws_measure",
+      "source": "24 Sep M&G Executive Sponsor Update",
+      "priority": "Medium",
+      "status": "In Progress",
+      "dueDate": "",
+      "notes": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "act_06",
+      "action": "Launch the AI success story submission form",
+      "owner": "Comms & Community",
+      "workstreamId": "ws_comms",
+      "source": "Start Here page — \"coming soon\" items",
+      "priority": "Medium",
+      "status": "Not Started",
+      "dueDate": "",
+      "notes": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "act_07",
+      "action": "Publish the Glean Prompt Library",
+      "owner": "Use Cases & Prompts",
+      "workstreamId": "ws_usecases",
+      "source": "Start Here page — \"coming soon\" items",
+      "priority": "Medium",
+      "status": "Not Started",
+      "dueDate": "",
+      "notes": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "act_08",
+      "action": "Add Glean training, AI learning, and office-hours links to Start Here",
+      "owner": "AI Literacy",
+      "workstreamId": "ws_literacy",
+      "source": "Start Here page — \"coming soon\" items",
+      "priority": "Medium",
+      "status": "Not Started",
+      "dueDate": "",
+      "notes": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "act_09",
+      "action": "Stand up the AI Usage Score and Analytics Dashboard",
+      "owner": "Measurement & Governance",
+      "workstreamId": "ws_measure",
+      "source": "Start Here page — \"coming soon\" items",
+      "priority": "Low",
+      "status": "Not Started",
+      "dueDate": "",
+      "notes": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    }
+  ],
+  "notes": [],
+  "comments": [],
+  "links": [
+    {
+      "id": "lnk_01",
+      "title": "Start Here — Global mAIn Council (Confluence)",
+      "url": "https://manhattanassociates.atlassian.net/wiki/spaces/GSBPD/pages/8127119400/Start+Here",
+      "workstreamId": null,
+      "kind": "Reference",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "lnk_02",
+      "title": "Glean training resources",
+      "url": "https://manhattanassociates.atlassian.net/wiki/spaces/GSBPD/pages/6973292567",
+      "workstreamId": null,
+      "kind": "Training",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "lnk_03",
+      "title": "Glean training resources",
+      "url": "https://manhattanassociates.atlassian.net/wiki/spaces/GSBPD/pages/6973292567",
+      "workstreamId": "ws_literacy",
+      "kind": "Training",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    }
+  ],
+  "wins": [
+    {
+      "id": "win_01",
+      "title": "Automated Inventory Audit Workbook",
+      "category": "Success story",
+      "summary": "Built a client-ready, multi-tab inventory audit workbook from Supply Search and Supply Audit JSON. Glean reused the prior audit prompt to generate daily inventory snapshots, movements, and reconciliation tabs in one repeatable flow.",
+      "impact": "Repeatable, client-ready audit in one flow",
+      "workstreamId": null,
+      "date": "2026-09-28",
+      "source": "September 2026 mAIn Council newsletter — Impact Story of the Month",
+      "featured": true,
+      "link": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "win_02",
+      "title": "Glean impact analysis: ~$4M annualized savings",
+      "category": "Milestone",
+      "summary": "Impact analysis of Glean across New Hire Billability, Issue Resolution Impact, and Support Ticket Replacement.",
+      "impact": "$4M annualized savings",
+      "workstreamId": "ws_measure",
+      "date": "2026-09-24",
+      "source": "24 Sep M&G Executive Sponsor Update",
+      "featured": false,
+      "link": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "win_03",
+      "title": "BAZAAR: CXO’s AI Marketplace introduced",
+      "category": "Milestone",
+      "summary": "A single, searchable repository for CXO’s AI tools, agents, and skills — so consultants can discover what already exists, understand how to use it, and reuse it across engagements.",
+      "impact": "One trusted catalog instead of scattered chats, bookmarks, and folders",
+      "workstreamId": null,
+      "date": "2026-09-28",
+      "source": "September 2026 mAIn Council newsletter",
+      "featured": false,
+      "link": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "win_04",
+      "title": "Elastic Analysis in Flowbuilder",
+      "category": "Tool spotlight",
+      "summary": "One browser-based workspace for trace, user, component, tenant, and time-based filtering, cross-index trace stitching, error summaries, and direct handoff to Glean for AI-assisted root-cause analysis.",
+      "impact": "Less time assembling logs, more time resolving issues",
+      "workstreamId": null,
+      "date": "2026-09-28",
+      "source": "September 2026 mAIn Council newsletter",
+      "featured": false,
+      "link": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "win_05",
+      "title": "Maki Schedule Logging",
+      "category": "Tool spotlight",
+      "summary": "Schedule log or sampler enablement against a customer environment and extension point in advance — capturing evidence for off-hours issues without staying online.",
+      "impact": "Fewer off-hours sessions; more consistent investigations",
+      "workstreamId": null,
+      "date": "2026-09-28",
+      "source": "September 2026 mAIn Council newsletter",
+      "featured": false,
+      "link": "",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    }
+  ],
+  "comms": [],
+  "activities": [
+    {
+      "id": "evt_01",
+      "title": "October mAIn newsletter",
+      "type": "Communication",
+      "date": "2026-10-07",
+      "timeframe": "Monthly — first week",
+      "workstreamId": "ws_comms",
+      "owner": "Comms & Community",
+      "status": "Planned",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "evt_02",
+      "title": "Two-week council update (snapshot)",
+      "type": "Milestone",
+      "date": "2026-10-08",
+      "timeframe": "Bi-weekly",
+      "workstreamId": null,
+      "owner": "Council lead",
+      "status": "Planned",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "evt_03",
+      "title": "Glean impact analysis readout to Executive Sponsors",
+      "type": "Milestone",
+      "date": "",
+      "timeframe": "Date TBC",
+      "workstreamId": "ws_measure",
+      "owner": "Measurement & Governance",
+      "status": "Planned",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "evt_04",
+      "title": "Monthly open house — demos and Q&A",
+      "type": "Event",
+      "date": "",
+      "timeframe": "Monthly",
+      "workstreamId": null,
+      "owner": "Council",
+      "status": "Planned",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "evt_05",
+      "title": "Q4 Agent-a-thon",
+      "type": "Event",
+      "date": "",
+      "timeframe": "Q4 2026",
+      "workstreamId": "ws_agents",
+      "owner": "Agent Pipeline",
+      "status": "Planned",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    },
+    {
+      "id": "evt_06",
+      "title": "Quarterly best-practices refresh and agent quality/duplication audit",
+      "type": "Review",
+      "date": "",
+      "timeframe": "Q4 2026",
+      "workstreamId": "ws_usecases",
+      "owner": "Use Cases & Prompts with Measurement & Governance",
+      "status": "Planned",
+      "createdAt": "2026-09-24T17:00:00.000Z",
+      "createdBy": "system",
+      "updatedAt": "2026-09-24T17:00:00.000Z"
+    }
+  ]
+}
