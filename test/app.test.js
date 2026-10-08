@@ -95,3 +95,43 @@ test('API: auth required for writes, permissions enforced, data persisted', asyn
     server.close();
   }
 });
+
+test('API: upload any document type, replace with a new version, download, delete', async () => {
+  const { db, file } = freshDb();
+  const uploadDir = path.join(path.dirname(file), 'uploads');
+  const server = http.createServer(createApp(db, () => fs.writeFileSync(file, JSON.stringify(db)), { uploadDir }));
+  await new Promise((r) => server.listen(0, r));
+  const base = `http://127.0.0.1:${server.address().port}`;
+  const post = (p, body, uid) => fetch(base + p, { method: 'POST', headers: { 'Content-Type': 'application/vnd.openxmlformats-officedocument.presentationml.presentation', ...(uid ? { 'X-User-Id': uid } : {}) }, body });
+  try {
+    assert.equal((await post('/api/files?name=a.pptx', 'x')).status, 401);
+    const res = await post(`/api/files?name=${encodeURIComponent('Q4 deck “final”.pptx')}&targetType=comms&targetId=library`, Buffer.from('v1 bytes'), 'm_trevor_rizzo');
+    assert.equal(res.status, 201);
+    const rec = await res.json();
+    assert.equal(rec.size, 8);
+    assert.equal(rec.version, 1);
+    assert.equal(rec.name, 'Q4 deck “final”.pptx');
+
+    // Someone without rights can't replace it; the uploader can.
+    assert.equal((await post(`/api/files/${rec.id}/content?name=x.pptx`, 'hack', 'm_brijesh_patel')).status, 403);
+    const v2 = await (await post(`/api/files/${rec.id}/content?name=Q4%20deck%20v2.pptx`, 'version two', 'm_trevor_rizzo')).json();
+    assert.equal(v2.version, 2);
+    assert.equal(fs.readdirSync(uploadDir).length, 1); // old version cleaned up
+
+    const dl = await fetch(`${base}/api/files/${rec.id}/download`);
+    assert.equal(dl.headers.get('content-type'), 'application/octet-stream');
+    assert.match(dl.headers.get('content-disposition'), /^attachment;/);
+    assert.equal(await dl.text(), 'version two');
+
+    // Metadata can't be forged through a JSON edit.
+    const edited = await (await fetch(`${base}/api/files/${rec.id}`, { method: 'PUT', headers: { 'Content-Type': 'application/json', 'X-User-Id': 'm_trevor_rizzo' }, body: JSON.stringify({ description: 'Deck', storedAs: '../../server.js' }) })).json();
+    assert.equal(edited.description, 'Deck');
+    assert.equal(edited.storedAs, `${rec.id}-v2`);
+
+    assert.equal((await fetch(`${base}/api/files/${rec.id}`, { method: 'DELETE', headers: { 'X-User-Id': 'm_trevor_rizzo' } })).status, 200);
+    await new Promise((r) => setTimeout(r, 50));
+    assert.equal(fs.readdirSync(uploadDir).length, 0);
+  } finally {
+    server.close();
+  }
+});

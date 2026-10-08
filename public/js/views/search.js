@@ -23,6 +23,8 @@ export function renderSearch(main, _params, query) {
       .map((w) => ({ href: '#/wins', title: w.title, sub: w.impact, badge: `<span class="tag">${esc(w.category || 'Win')}</span>` }))],
     ['Email drafts', db.comms.filter((c) => match(text(c, ['subject', 'body'])))
       .map((c) => ({ href: `#/comms/${c.id}`, title: c.subject, sub: '', badge: pill(c.status) }))],
+    ['Documents', (db.files || []).filter((f) => match(text(f, ['name', 'description'])))
+      .map((f) => ({ href: f.targetType === 'commsDraft' ? `#/comms/${f.targetId}` : '#/comms', title: f.name, sub: f.description || store.memberName(f.createdBy), badge: '' }))],
     ['Discussion', db.comments.filter((c) => match((c.text || '').toLowerCase()))
       .map((c) => ({ href: c.targetType === 'workstream' ? `#/ws/${c.targetId}` : c.targetType === 'snapshot' ? `#/snapshot/${c.targetId}` : `#/comms/${c.targetId}`, title: c.text.slice(0, 120), sub: store.memberName(c.createdBy), badge: '' }))],
   ].filter(([, items]) => items.length);

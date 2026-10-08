@@ -3,7 +3,7 @@ import * as store from '../store.js';
 import { esc, pill, fmtRange, fmtDate, todayISO, addDays, toLines, COMMS_STATUS, ago } from '../util.js';
 import { toast, confirmDialog, openModal, input } from '../ui.js';
 import { generateEmail, AUDIENCES, DEFAULT_CTAS } from '../email.js';
-import { commentsThread, bindComments, signInHint, upcomingActivities } from './shared.js';
+import { commentsThread, bindComments, signInHint, upcomingActivities, filesPanel, bindFiles } from './shared.js';
 
 let statusFilter = '';
 
@@ -34,8 +34,15 @@ export function renderComms(main) {
         const s = store.db.snapshots.find((x) => x.id === c.snapshotId);
         return `<tr><td><a class="act-title" href="#/comms/${c.id}">${esc(c.subject || '(no subject)')}</a></td><td class="small">${esc(AUDIENCES[c.audience] || c.audience)}</td>
           <td class="small">${s ? `<a href="#/snapshot/${s.id}">${esc(s.title)}</a>` : '—'}</td><td>${pill(c.status)}</td><td class="small muted">${ago(c.updatedAt)} · ${esc(store.memberName(c.updatedBy || c.createdBy))}</td></tr>`;
-      }).join('')}</tbody></table></div>` : '<div class="empty"><strong>No email drafts yet</strong>Generate one from the current council update.</div>'}</div>`;
+      }).join('')}</tbody></table></div>` : '<div class="empty"><strong>No email drafts yet</strong>Generate one from the current council update.</div>'}</div>
 
+    <div class="section">
+      <div class="section-head"><h2>Documents &amp; assets <span class="count">${store.filesFor('comms', 'library').length}</span></h2></div>
+      <div class="card"><p class="small muted" style="margin:0 0 12px">Newsletters, decks, spreadsheets, PDFs, images, sample emails — anything the Comms team works from. Use <strong>Update</strong> to upload a newer version of a file.</p>
+        ${filesPanel('comms', 'library', { empty: 'No documents uploaded yet.' })}</div>
+    </div>`;
+
+  bindFiles(main);
   main.querySelector('#st').addEventListener('change', (e) => { statusFilter = e.target.value; renderComms(main); });
 }
 
@@ -135,6 +142,8 @@ export function renderCommsEditor(main, id, query) {
             ${existing && store.canDo('delete', 'comms', existing) ? '<button type="button" class="btn danger" id="delDraft">Delete</button>' : ''}
           </div>` : ''}
 
+          ${existing ? `<div class="card"><h3>Attachments</h3><div style="margin-top:10px">${filesPanel('commsDraft', existing.id, { empty: 'No attachments for this email.' })}</div></div>` : ''}
+
           ${existing ? `<div class="card"><h3>Review comments</h3>${commentsThread('comms', existing.id, { placeholder: 'Suggest an edit or approve…', empty: 'No review comments yet.' })}
             ${existing.status === 'Published' ? `<p class="small" style="margin-top:12px"><strong>Published</strong> ${fmtDate(existing.publishedDate)}${existing.publishedLink ? ` · <a href="${esc(existing.publishedLink)}" target="_blank" rel="noopener">View</a>` : ''}</p>` : ''}</div>` : ''}
         </div>
@@ -163,6 +172,7 @@ export function renderCommsEditor(main, id, query) {
   const bind = (snap) => {
     const form = main.querySelector('#commsForm');
     bindComments(main);
+    bindFiles(main);
     form.querySelector('#f_snapshotId')?.addEventListener('change', (e) => { capture(); state.snapshotId = e.target.value; include = null; draw(); });
     form.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => { capture(); tab = b.dataset.tab; draw(); }));
     form.querySelector('#generate')?.addEventListener('click', async () => {

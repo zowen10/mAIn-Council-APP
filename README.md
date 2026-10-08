@@ -24,10 +24,10 @@ Open the app and **choose who you are** (top right) to edit. Until then, the hub
 | **Action Items** | Shared tracker with filters for owner, workstream, status, priority, and due date. Overdue and blocked items are highlighted, statuses can be changed inline, and the list exports to CSV. Completed items are kept for history. |
 | **Meeting Notes** | Date, type, scope, participants, notes, decisions, and links. Actions can be created from a note, or typed one per line when saving (`Do the thing @Owner`). |
 | **Wins & Stories** | Success stories, milestones, tool spotlights, and metrics. Anyone can share one, and Comms can feature them. |
-| **Comms** | Pick an approved snapshot and audience, choose accomplishments, stories, metrics, activities, and calls to action, then generate a draft, edit, and preview it. The draft moves through Draft → In Review → Approved → Published → Archived and stays linked to its source snapshot. It is never sent automatically: use Copy or Open in email app. |
-| **Workstream pages** (×5) | All five share one layout: mission and scope, leaders and members, a current update in the six-panel executive format, action items, discussion, useful links, and update history. |
+| **Comms** | Pick an approved snapshot and audience, choose accomplishments, stories, metrics, activities, and calls to action, then generate a draft, edit, and preview it. The draft moves through Draft → In Review → Approved → Published → Archived and stays linked to its source snapshot. It is never sent automatically: use Copy or Open in email app. A **Documents & assets** library takes any file type (Word, PowerPoint, Excel, PDF, images, .msg emails), with **Update** to upload a newer version. Each draft can also have its own attachments. |
+| **Workstream pages** (×5) | All five share one layout: mission and scope, leaders and members, a current update in the six-panel executive format, action items, discussion (newest post at the top), useful links, and update history. |
 | **Admin** | Manage workstreams (including adding a sixth), leaders, members, and roles. |
-| **Search** | Searches across updates, snapshots, actions, notes, wins, email drafts, and discussion. |
+| **Search** | Searches across updates, snapshots, actions, notes, wins, email drafts, document names, and discussion. |
 
 ### Two-week snapshot workflow
 
@@ -55,7 +55,9 @@ All rules live in one file, [`public/js/permissions.js`](public/js/permissions.j
 ## How it's built
 
 - `server.js`: a zero-dependency Node HTTP server. It serves `public/` and a small REST API (`GET /api/state`, `POST/PUT/DELETE /api/<collection>/<id>`) and stamps `createdBy`, `updatedBy`, and timestamps on every record.
-- Storage: a single JSON file, `data/db.json`, created from `data/seed.json` on first run and written atomically. Set `DB_FILE` to keep it on a persistent volume. Back it up by copying the file.
+- Storage: a single JSON file, `data/db.json`, created from `data/seed.json` on first run and written atomically. Set `DB_FILE` to keep it on a persistent volume.
+- Uploaded documents: stored in `data/uploads/` (next to `DB_FILE`) under generated names, never the original filename. The upload limit is 50 MB per file; change it with `MAX_UPLOAD_MB`. Downloads are always served as attachments, so uploaded files never run inside the hub.
+- Backups: copy the whole `data/` folder (database and uploads).
 - `public/`: a single-page app in plain ES modules (no build step). `rollup.js` builds snapshot drafts and `email.js` generates emails. Both are pure functions covered by tests.
 
 Collections: `workstreams`, `members`, `updates`, `snapshots`, `actions`, `notes`, `comments`, `links`, `wins`, `comms`, `activities`.

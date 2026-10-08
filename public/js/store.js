@@ -57,6 +57,26 @@ export async function save(col, rec, { quiet = false, message } = {}) {
   }
 }
 
+/** Upload a file (any type). Pass replaceId to upload a new version of an existing file. */
+export async function upload(file, { targetType = '', targetId = '', replaceId } = {}) {
+  const params = new URLSearchParams({ name: file.name, ...(replaceId ? {} : { targetType, targetId }) });
+  const res = await fetch(replaceId ? `/api/files/${replaceId}/content?${params}` : `/api/files?${params}`, {
+    method: 'POST',
+    headers: { 'Content-Type': file.type || 'application/octet-stream', ...(userId ? { 'X-User-Id': userId } : {}) },
+    body: file,
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(`${file.name}: ${data.error || `upload failed (${res.status})`}`);
+  return data;
+}
+
+/** Re-fetch after a batch of uploads and re-render. */
+export async function refresh() { await load(); emit(); }
+
+export const filesFor = (targetType, targetId) => (db.files || [])
+  .filter((f) => f.targetType === targetType && f.targetId === targetId)
+  .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+
 export async function remove(col, id, message = 'Deleted') {
   try {
     await request('DELETE', `/api/${col}/${id}`);
@@ -87,4 +107,5 @@ export function latestUpdate(workstreamId, { includeDrafts = false } = {}) {
     .sort((a, b) => (b.periodEnd || '').localeCompare(a.periodEnd || '') || (b.updatedAt || '').localeCompare(a.updatedAt || ''))[0] || null;
 }
 
-export const commentsFor = (targetType, targetId) => db.comments.filter((c) => c.targetType === targetType && c.targetId === targetId).sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+// Newest first, so the latest post is always at the top of a discussion.
+export const commentsFor = (targetType, targetId) => db.comments.filter((c) => c.targetType === targetType && c.targetId === targetId).sort((a, b) => b.createdAt.localeCompare(a.createdAt));

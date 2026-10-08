@@ -260,6 +260,20 @@ a.list-item:hover { background: var(--mint-50); }
 .steps span.now { background: var(--brand-900); color: #fff; }
 .steps i { color: var(--line-strong); font-style: normal; }
 
+/* ---------- documents ---------- */
+.dropzone { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 18px; border: 2px dashed var(--line-strong); border-radius: 12px; background: var(--mint-50); cursor: pointer; text-align: center; transition: .15s; }
+.dropzone:hover, .dropzone.over { border-color: var(--accent); background: var(--mint-100); }
+.dropzone strong { color: var(--ink); }
+.file-row { padding: 10px 0; align-items: center; }
+.file-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; font-size: 11px; font-weight: 800; letter-spacing: .03em; color: #fff; background: var(--gray); }
+.file-icon.word { background: #2b5797; }
+.file-icon.ppt { background: #c4502c; }
+.file-icon.xls { background: #1e7145; }
+.file-icon.pdf { background: #b3261e; }
+.file-icon.img { background: #7c4dbd; }
+.file-icon.media { background: #0f6e8c; }
+.file-icon.mail { background: #0a64ad; }
+
 /* ---------- responsive ---------- */
 @media (max-width: 1100px) {
   .g4, .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }

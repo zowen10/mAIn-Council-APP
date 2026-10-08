@@ -12,7 +12,7 @@ export const ROLES = {
 // Collections the API exposes.
 export const COLLECTIONS = [
   'workstreams', 'members', 'updates', 'snapshots', 'actions',
-  'notes', 'comments', 'links', 'wins', 'comms', 'activities',
+  'notes', 'comments', 'links', 'wins', 'comms', 'activities', 'files',
 ];
 
 const has = (user, ...roles) => !!user && (user.roles || []).some((r) => roles.includes(r));
@@ -91,6 +91,10 @@ export function can(user, action, col, rec, db, next) {
     case 'links':
       if (action === 'create') return true;
       return isAuthor(user, rec) || isLeadOf(user, rec.workstreamId, db);
+
+    case 'files':
+      if (action === 'create') return true; // any signed-in member can upload
+      return isAuthor(user, rec) || has(user, 'comms', 'council_lead');
 
     case 'comments':
       if (action === 'create') return true;
